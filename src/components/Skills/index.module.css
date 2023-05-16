@@ -1,0 +1,44 @@
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+/* 左右边距来自container组件 */
+.skill-box {
+  background: #151515;
+  border-radius: 64px;
+  /* 文本节点居中 */
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill :global(h2) {
+  font-size: 45px;
+  font-weight: 700;
+}
+.skill :global(p) {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+/* 轮播图 */
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.skill-slider .item :global(img) {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.background-image-left {
+  /* 离上面高一点点 */
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  /* 只在左边一部份 */
+  width: 40%;
+  z-index: -4;
+}

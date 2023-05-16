@@ -1,0 +1,67 @@
+.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: 0.32s ease-in-out;
+}
+.navbar.scrolled {
+  padding: 0;
+  background-color: #121212;
+}
+
+.logo {
+  width: 3em;
+  height: auto;
+}
+
+.nav > :global(.nav-link) {
+  padding: 0 25px !important;
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+.nav > :global(.nav-link.active) {
+  opacity: 1;
+}
+.nav > *:hover {
+  opacity: 1;
+}
+
+.navbar-text {
+  display: flex;
+  align-items: center;
+}
+
+/* Let's Connect button */
+.vvd {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+  padding: 1em 34px;
+  margin-left: 1em;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+.vvd::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.vvd:hover {
+  color: #121212;
+}
+.vvd:hover::before {
+  width: 100%;
+}

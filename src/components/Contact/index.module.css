@@ -1,0 +1,74 @@
+.contact {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+.form-title {
+  font-size: 45px;
+  font-weight: 700;
+  /* 让下面看起来更广 */
+  margin-bottom: 30px;
+}
+
+.contact :global(input),
+.contact :global(textarea) {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact :global(input)::placeholder,
+.contact :global(textarea)::placeholder {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contact :global(input):focus,
+.contact :global(textarea):focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+
+.submit {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  /* 让上面看起来更广 */
+  margin-top: 25px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+.submit:hover {
+  color: #fff;
+}
+.submit > :global(span) {
+  z-index: 1;
+  position: relative;
+}
+.submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #121212;
+  width: 0%;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.submit:hover::before {
+  width: 100%;
+}

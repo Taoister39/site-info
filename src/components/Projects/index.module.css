@@ -1,0 +1,57 @@
+.project {
+  background-color: black;
+  padding: 80px 0;
+  position: relative;
+}
+
+.project .title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project :global(p) {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  /* 容器居中 */
+  margin: 14px auto 30px auto;
+  text-align: center;
+  /* width: 56%; */
+}
+
+.nav-pills {
+  border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(255 255 255 / 10%);
+}
+.nav-pills > * {
+  flex: 1 1 1%;
+}
+.nav-pills :global(.nav-link) {
+  /* 颜色完整填扑 */
+  border-radius: 0;
+  padding: 17px 0;
+  background: none !important;
+  position: relative;
+  z-index: 0;
+}
+
+.nav-pills :global(.nav-link)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.nav-pills :global(.nav-link.active)::before {
+  width: 100%;
+}

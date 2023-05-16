@@ -1,0 +1,18 @@
+.footer {
+  padding: 0;
+  padding-bottom: 50px;
+  background-position: center center;
+  background-image: url("@/assets/img/footer-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 26%;
+}
+.info {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
